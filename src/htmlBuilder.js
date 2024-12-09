@@ -36,7 +36,7 @@ const generateHead = () => `
 const generateBody = (xrayUrl, singboxUrl, clashUrl, baseUrl) => `
   <body>
     ${generateDarkModeToggle()}
-    ${generateGithubLink()}
+
     <div class="container mt-5">
       <div class="card mb-5">
         ${generateCardHeader()}
