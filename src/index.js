@@ -216,7 +216,7 @@ async function handleRequest(request) {
         headers: { 'content-type': 'application/json; charset=utf-8' }
       });
     } else if (url.pathname === '/favicon.ico') {
-      return Response.redirect('https://cravatar.cn/avatar/9240d78bbea4cf05fb04f2b86f22b18d?s=160&d=retro&r=g', 301)
+//      return Response.redirect('https://cravatar.cn/avatar/9240d78bbea4cf05fb04f2b86f22b18d?s=160&d=retro&r=g', 301)
     } else if (url.pathname === '/config') {
       const { type, content } = await request.json();
       const configId = `${type}_${GenerateWebPath(8)}`;
